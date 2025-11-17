@@ -1,0 +1,10 @@
+#include<stdio.h>
+  int main(){
+   float f;
+   int i;
+   printf("enter the float value");
+   scanf("%f",&f);
+   i=(int)f;
+   printf("integer value is %d\n",i);
+   return 0;
+  }
