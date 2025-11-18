@@ -1,17 +1,23 @@
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+
+int main() {
     int marks;
-    printf("enter the value of marks");
-    scanf("%d",&mark);
-    if(marks>90){
-        printf("distinction");
-        if(marks>70){
-            printf("good");
-            if(marks>50){
-                printf(should get better marks);
-                if(marks<50){
-                    printf("fail");
-                }
-            }
-        }
+    
+    printf("Enter the value of marks: ");
+    scanf("%d", &marks);
+
+    if (marks > 90) {
+        printf("Distinction\n");
+    } 
+    else if (marks > 70) {
+        printf("Good\n");
+    } 
+    else if (marks > 50) {
+        printf("Should get better marks\n");
+    } 
+    else {
+        printf("Fail\n");
     }
+
+    return 0;
+}
