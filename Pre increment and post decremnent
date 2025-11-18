@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main() {
+    int a = 5, b, c;
+    b = ++a;   // pre-increment
+    c = a++;   // post-increment
+    printf("%d %d %d", a, b, c);
+    return 0;
+}
