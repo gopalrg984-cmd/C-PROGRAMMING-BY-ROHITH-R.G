@@ -1,0 +1,15 @@
+// iproximate sin(x) value
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float x, sinx;
+    printf("Enter value of x in radians: ");
+    scanf("%f", &x);
+
+    sinx = x - (pow(x,3)/6) + (pow(x,5)/120) - (pow(x,7)/5040);
+
+    printf("Approximate sin(x) = %f", sinx);
+    return 0;
+}
+
