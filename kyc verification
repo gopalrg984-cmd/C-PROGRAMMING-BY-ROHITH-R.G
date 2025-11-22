@@ -1,0 +1,57 @@
+#include <stdio.h>
+int main() {
+    int choice, input;
+    int PAN = 12;
+    int AADHAR = 54;
+    int APAAR = 1;
+    int DL = 22;
+    int passport = 33;
+    printf("                   KYC Verification System               \n1. PAN Number\n2. AADHAR Number\n3. APAAR ID\n4. Driving License\n5. Passport Number\n");
+    printf("\nEnter your choice: ");
+    scanf("%d", &choice);
+    switch(choice) {
+        case 1:
+            printf("Enter PAN Number: ");
+            scanf("%d", &input);
+            if(input == PAN)
+                printf("✔ PAN Verified\n");
+            else
+                printf("❌ PAN Not Verified\n");
+            break;
+        case 2:
+            printf("Enter AADHAR Number: ");
+            scanf("%d", &input);
+            if(input == AADHAR)
+                printf("✔ AADHAR Verified\n");
+            else
+                printf("❌ AADHAR Not Verified\n");
+            break;
+        case 3:
+            printf("Enter APAAR ID: ");
+            scanf("%d", &input);
+            if(input == APAAR)
+                printf("✔ APAAR ID Verified\n");
+            else
+                printf("❌ APAAR ID Not Verified\n");
+            break;
+        case 4:
+            printf("Enter Driving License Number: ");
+            scanf("%d", &input);
+            if(input == DL)
+                printf("✔ Driving License Verified\n");
+            else
+                printf("❌ Driving License Not Verified\n");
+            break;
+        case 5:
+            printf("Enter Passport Number: ");
+            scanf("%d", &input);
+            if(input == passport)
+                printf("✔ Passport Verified\n");
+            else
+                printf("❌ Passport Not Verified\n");
+            break;
+        default:
+            printf("Invalid Choice\n");
+    }
+    return 0;
+}
