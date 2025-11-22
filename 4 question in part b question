@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main() {
+    char first[5], last[5], full[10];
+    int i = 0, j = 0, length = 0;
+    printf("Enter First Name: ");
+    scanf("%s", first);
+    printf("Enter Last Name: ");
+    scanf("%s", last);
+    while (first[i] != '\0') {
+        full[length] = first[i];
+        i++;
+        length++;
+    }
+    full[length];
+    length++;
+    while (last[j] != '\0') {
+        full[length] = last[j];
+        j++;
+        length++;
+    }
+    full[length] = '\0';
+    printf("\nFull Name: %s\n", full);
+    printf("Length of Full Name: %d characters\n", length);
+    if (length <= 20)
+        printf("Status: Fits the screen\n");
+    else
+        printf("Status: Does NOT fit the screen\n");
+    return 0;
+}
