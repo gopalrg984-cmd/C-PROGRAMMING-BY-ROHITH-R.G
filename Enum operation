@@ -1,0 +1,20 @@
+#include<stdio.h>
+enum operation{
+      add,
+      substraction,
+      division,
+      multiplucation
+};
+ int main(){
+   enum operation op;
+  printf("Enter operation: 0-3): ");
+ scanf("%d", &op);
+ if (op == add)
+ printf("You chose addition");
+ else if (op == substraction)
+ printf("You chose subtraction");
+ else
+ printf("Other operation");
+ return 0;
+}
+ 
