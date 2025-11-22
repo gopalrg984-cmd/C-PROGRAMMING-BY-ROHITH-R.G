@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(){
+    int units[5], price[5], total[5], i;
+
+    printf("Enter units shipped for 5 products:\n");
+    for(i=0;i<5;i++){
+        scanf("%d",&units[i]);
+    }
+
+    printf("Enter revenue per unit for those products:\n");
+    for(i=0;i<5;i++){
+        scanf("%d",&price[i]);
+    }
+
+    for(i=0;i<5;i++){
+        total[i] = units[i] * price[i];
+    }
+
+    printf("\nTotal Revenue per Product:\n");
+    for(i=0;i<5;i++){
+        printf("Product %d Revenue = %d\n", i+1, total[i]);
+    }
+
+    return 0;
+}
